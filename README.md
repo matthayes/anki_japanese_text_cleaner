@@ -1,6 +1,7 @@
 # Anki Japanese Text Cleaner
 
-[![Release](https://img.shields.io/badge/release-v0.1-brightgreen.svg)](https://github.com/matthayes/anki_japanese_spacing_fixer/releases/tag/v0.1)
+[![Build Status](https://travis-ci.org/matthayes/anki_japanese_text_cleaner.svg?branch=master)](https://travis-ci.org/matthayes/anki_japanese_text_cleaner.svg?branch=master)
+[![Release](https://img.shields.io/badge/release-v0.1-brightgreen.svg)](https://github.com/matthayes/anki_japanese_text_cleaner/releases/tag/v0.1)
 
 This is a plugin for [Anki](http://ankisrs.net/) that can help clean up Japanese text in the following ways:
 
