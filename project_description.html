@@ -1,0 +1,58 @@
+This is a plugin for Anki that can help clean up Japanese text in the following ways:
+
+<b>Clean unnecessary spaces</b>, while preserving those spaces that are necessary for indicating the start of a Japanese reading (as in the <a href="https://ankiweb.net/shared/info/3918629684">Japanese Support plugin</a>).
+
+&lt;b&gt; 一[いち]&lt;/b&gt;から 始[はじ]めましょう。
+=&gt;
+&lt;b&gt;一[いち]&lt;/b&gt;から 始[はじ]めましょう。
+
+彼女[かのじょ]はイタリア 語[ご]が&lt;b&gt; できます&lt;/b&gt;。
+=&gt;
+彼女[かのじょ]はイタリア 語[ご]が&lt;b&gt;できます&lt;/b&gt;。
+
+<b>Clean unnecessary furigana</b> from the beginning, end, or within individual readings within text.
+
+別に[べつに]
+=&gt;
+別[べつ]に
+
+世の中[よのなか]
+=&gt;
+世[よ]の 中[なか]
+
+Both are designed to:
+<ul>
+<li>Properly handle text with multiples lines</li>
+<li>Properly handle text with HTML markup by allowing HTML tags to pass through unchanged</li>
+</ul>
+In addition, there are some features to guard against accidental changes or bugs in the plugin:
+<ul>
+<li>A <code>Check</code> action logs all changes that would be made without taking any action.</li>
+<li>A <code>Diff</code> action produces a colorful HTML diff highlighting in green what will been added and in red what will be removed for each note.</li>
+<li>A 'Fix' action actually performs the changes.</li>
+<li>Each batch of changes is recorded in the undo history within Anki.</li>
+<li>A full change log is kept in a SQLite database within the plugin's local directory.  Recent changes can be viewed in the UI and the full history of changes can be exported to a CSV file.  This enables you to recover any previous values altered by the plugin.</li>
+</ul>
+Despite these safety features, it's a good idea to back up or export your collection before using this plugin just to be safe.
+
+You can access the dialogs by clicking <em>Browse</em> to open the card browser and then clicking Edit -&gt; Japanese Text Cleaner.  The fixer dialgos require you to select some cards first.  These are the cards that will be checked.
+
+Version History
+<ul>
+<li>0.1: Initial Release</li>
+</ul>
+License
+
+Copyright 2019 Matthew Hayes
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at<
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
