@@ -46,6 +46,28 @@ Despite these safety features, it's a good idea to back up or export your collec
 
 You can access the dialogs by clicking *Browse* to open the card browser and then clicking Edit -> Japanese Text Cleaner.  The fixer dialgos require you to select some cards first.  These are the cards that will be checked.
 
+## Screenshots
+
+Dialog to check for unnecessary spacing:
+
+<img src="https://raw.githubusercontent.com/matthayes/anki_japanese_text_cleaner/master/screenshots/check_spacing_dialog.png" width="70%">
+
+Dialog to check for unnecessary furigana:
+
+<img src="https://raw.githubusercontent.com/matthayes/anki_japanese_text_cleaner/master/screenshots/check_furigana_dialog.png" width="70%">
+
+HTML diff of proposed spacing changes:
+
+<img src="https://raw.githubusercontent.com/matthayes/anki_japanese_text_cleaner/master/screenshots/check_spacing_diff.png" width="50%">
+
+HTML diff of proposed furigana changes:
+
+<img src="https://raw.githubusercontent.com/matthayes/anki_japanese_text_cleaner/master/screenshots/check_furigana_diff.png" width="35%">
+
+Viewing the log of changes:
+
+<img src="https://raw.githubusercontent.com/matthayes/anki_japanese_text_cleaner/master/screenshots/view_log.png" width="70%">
+
 ## Testing
 
 I have tested against the following shared decks which I found on Anki's [Japanese shared decks page](https://ankiweb.net/shared/decks/japanese).  Below I include some stats as of July 10, 2019 when I lasted tested the plugin against the decks.
