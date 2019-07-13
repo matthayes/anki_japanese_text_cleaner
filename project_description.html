@@ -1,4 +1,4 @@
-This is a plugin for Anki that can help clean up Japanese text in the following ways:
+This is a plugin for Anki that can help clean up Japanese text in the ways outlined below.  Issues can be reported on the <a href="https://github.com/matthayes/anki_japanese_text_cleaner/issues">Issues page</a> for the project on Github.
 
 <b>Clean unnecessary spaces</b>, while preserving those spaces that are necessary for indicating the start of a Japanese reading (as in the <a href="https://ankiweb.net/shared/info/3918629684">Japanese Support plugin</a>).
 
@@ -17,25 +17,34 @@ In addition, there are some features to guard against accidental changes or bugs
 <ul>
 <li>A <code>Check</code> action logs all changes that would be made without taking any action.</li>
 <li>A <code>Diff</code> action produces a colorful HTML diff highlighting in green what will been added and in red what will be removed for each note.</li>
-<li>A 'Fix' action actually performs the changes.</li>
+<li>A <code>Fix</code> action actually performs the changes.</li>
 <li>Each batch of changes is recorded in the undo history within Anki.</li>
 <li>A full change log is kept in a SQLite database within the plugin's local directory.  Recent changes can be viewed in the UI and the full history of changes can be exported to a CSV file.  This enables you to recover any previous values altered by the plugin.</li>
 </ul>
+
+<img src="https://raw.githubusercontent.com/matthayes/anki_japanese_text_cleaner/master/screenshots/view_log_sm.png">
+
 Despite these safety features, it's a good idea to back up or export your collection before using this plugin just to be safe.
 
-You can access the dialogs by clicking <em>Browse</em> to open the card browser and then clicking Edit -&gt; Japanese Text Cleaner.  The fixer dialgos require you to select some cards first.  These are the cards that will be checked.
+You can access the dialogs by clicking <i>Browse</i> to open the card browser and then clicking Edit -&gt; Japanese Text Cleaner.  The fixer dialgos require you to select some cards first.  These are the cards that will be checked.
 
-Version History
+<b>Support</b>
+
+If you experience a problem or have any comments/ideas, please open an issue at the <a href="https://github.com/matthayes/anki_japanese_text_cleaner/issues">Issues page</a> for the project on Github.
+
+<b>Version History</b>
+
 <ul>
 <li>0.1: Initial Release</li>
 </ul>
-License
+
+<b>License</b>
 
 Copyright 2019 Matthew Hayes
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
-You may obtain a copy of the License at<
+You may obtain a copy of the License at
 
 http://www.apache.org/licenses/LICENSE-2.0
 
